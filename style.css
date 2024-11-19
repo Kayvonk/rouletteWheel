@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333333;
+}
+
+#spinBtn {
+  z-index: 2;
+}
+
+#wheel-container {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+#pointer {
+  position: relative;
+  width: 3px;
+  height: 24px;
+  background-color: aliceblue;
+  top: 25px;
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#wheel {
+  position: relative;
+  border: 1px solid black;
+  padding: 0;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* rotation is anchored at the bottom left (transform-origin: 0% 100%). */
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+
+/* .text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+} */
+
+li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+
+li:nth-child(2) {
+  transform: rotate(15deg) skewY(-60deg);
+}
+li:nth-child(3) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+
+li:nth-child(4) {
+  transform: rotate(45deg) skewY(-60deg);
+}
+li:nth-child(5) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+
+li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+
+li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+
+li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+
+li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+
+li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+
+li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+
+li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+
+li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+
+li:first-child  {
+  background: green;
+}
+
+li:nth-child(2)  {
+  background: tomato;
+}
+
+li:nth-child(3)  {
+  background: aqua;
+}
+
+li:nth-child(4)  {
+  background: yellow;
+}
+
+li:nth-child(5)  {
+  background: orange;
+}
+
+li:nth-child(6)  {
+  background: purple;
+}
+
+li:nth-child(7)  {
+  background: cyan;
+}
+
+li:nth-child(8)  {
+  background: brown;
+}
+
+li:nth-child(9)  {
+  background: gray;
+}
+
+li:nth-child(10)  {
+  background: pink;
+}
+
+li:nth-child(11)  {
+  background: maroon;
+}
+
+li:nth-child(12)  {
+  background: gold;
+}
